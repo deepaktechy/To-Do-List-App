@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List by Deepak Vishwakarma</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to Google Fonts for custom font styles -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Main container for the To Do List application -->
+    <div class="container">
+        <!-- Statistics section displaying progress and task count -->
+        <div class="stats-container">
+            <div class="details">
+                <h1>To Do List App</h1>
+                <p>Be Consistent & Work Hard</p>
+                <div id="progressBar">
+                    <div id="progress"></div>
+                </div>
+            </div>
+            <div class="stats-numbers">
+                <p id="numbers">0 / 0</p>
+            </div>
+        </div>
+
+        <!-- Form for adding new tasks -->
+        <form id="taskForm">
+            <input type="text" id="taskInput" placeholder="Write Your Task" />
+            <button id="newTask" type="submit">+</button>
+        </form>
+
+        <!-- List of tasks -->
+        <ul id="task-list"></ul>
+    </div>
+
+    <!-- Scripts for particles animation and custom JavaScript logic -->
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
